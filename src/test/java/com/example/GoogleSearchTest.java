@@ -1,20 +1,12 @@
 package com.example;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test; // Correct import for JUnit 4
+import static org.junit.Assert.assertTrue;
 
-public class AppTest extends TestCase {
+public class GoogleSearchTest {
 
-    public AppTest( String testName ) {
-        super( testName );
-    }
-
-    public static Test suite() {
-        return new TestSuite( AppTest.class );
-    }
-
+    @Test // JUnit 4 annotation for test methods
     public void testApp() {
-        assertTrue( true );
+        assertTrue(true); // Test assertion
     }
 }
