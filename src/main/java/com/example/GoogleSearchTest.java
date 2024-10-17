@@ -1,12 +1,12 @@
 package com.example;
 
-import org.junit.Test;
+import org.junit.Test; // Correct import for JUnit 4
 import static org.junit.Assert.assertTrue;
 
 public class GoogleSearchTest {
 
-    @Test
+    @Test // JUnit 4 annotation for test methods
     public void testApp() {
-        assertTrue(true);
+        assertTrue(true); // Test assertion
     }
 }
