@@ -1,22 +1,12 @@
 package com.example;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test; // Use this import for JUnit
+import static org.junit.Assert.assertTrue;
 
-public class GoogleSearchTest extends TestCase {
+public class GoogleSearchTest {
 
-    // Constructor name corrected to match the class name
-    public GoogleSearchTest(String testName) {
-        super(testName);
-    }
-
-    public static Test suite() {
-        // Corrected to reference the current class
-        return new TestSuite(GoogleSearchTest.class);
-    }
-
+    @Test // This annotation marks the method as a test case
     public void testApp() {
-        assertTrue(true);
+        assertTrue("This test always passes", true);
     }
 }
