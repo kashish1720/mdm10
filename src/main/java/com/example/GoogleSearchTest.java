@@ -6,15 +6,17 @@ import junit.framework.TestSuite;
 
 public class GoogleSearchTest extends TestCase {
 
-    public AppTest( String testName ) {
-        super( testName );
+    // Constructor name corrected to match the class name
+    public GoogleSearchTest(String testName) {
+        super(testName);
     }
 
     public static Test suite() {
-        return new TestSuite( AppTest.class );
+        // Corrected to reference the current class
+        return new TestSuite(GoogleSearchTest.class);
     }
 
     public void testApp() {
-        assertTrue( true );
+        assertTrue(true);
     }
 }
