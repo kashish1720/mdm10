@@ -1,12 +1,13 @@
 package com.example;
 
-import org.junit.Test; // Correct import for JUnit 4
-import static org.junit.Assert.assertTrue;
+import org.junit.jupiter.api.Test; // Use JUnit 5 import
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class GoogleSearchTest {
 
-    @Test // JUnit 4 annotation for test methods
-    public void testApp() {
-        assertTrue(true); // Test assertion
+    @Test
+    void testGoogleSearch() {
+        // Your test logic here
+        assertTrue(true); // Example assertion
     }
 }
